@@ -9,9 +9,9 @@
 	font-size:80px;
 }
 .text{
-	border-left:5px solid red;
+	//border-left:5px solid red;
 	padding:10px;
-	margin;10px;
+	margin:10px;
 	font-family:Segoe UI;
 	color:green;
 }
@@ -39,19 +39,33 @@ td{
 	color:Gold;
 }
 a{
- 	color:rgb(255, 215, 0);
+ 	color:rgb(255, 140, 0);
 	text-decoration:none;
 }
 a:hover{
-	color:rgba(255, 215, 0,50);
+	color:rgba(255, 140,0,0.5);
 	
 }	
-div{
-	background-color:AntiqueWhite;
+div#myText{
+	position: absolute; 
+	//background-color:AntiqueWhite;
 	width: 500px;
-	border: 20px solid green;
+	height : 550px;
+	border-right : 10px solid green;
 	padding: 10px;
 	margin: 10px;
+	top: 0 px; 
+	left: 0 px; 
+	
+}
+div#myTable{
+	position: absolute; 
+	width : 400px;
+	height : 500px;
+	margin-left : 550px;
+	padding : 10px;
+	//border : 5px solid green;
+	 
 }
 </style>
 </head>
@@ -61,7 +75,7 @@ div{
 <p style="float:right"><img src="logo.jpg" style="width:60px;height:60px"></P>
 <h1 class ="Heading" align=center><span style="color:grey">PULKIT </span><span style="color:red">ARYA</span></h1>
 
-<div>
+<div id = "myText">
 <p class = "text">
 I am the author of this page. I am a CSE major at Ohio State University. My skills are:
 </p>
@@ -83,7 +97,9 @@ I am the author of this page. I am a CSE major at Ohio State University. My skil
 <li>Determined</li>
 </ol>
 </div>
-<p class = "text">I also have the knowldge of the following courses:</p>
+<div id = "myTable">
+<p class = "text">I also have the knowldge of the following courses:<br>
+I did these courses at <a href="https://iantindia.com/" title="link to website" target = "_blank" >IANT </a></p>
 <table>
 <tr>
 	<th>Course name</th>
@@ -119,6 +135,6 @@ I am the author of this page. I am a CSE major at Ohio State University. My skil
 	<td>Good</td>
 </tr>
 </table>
-<p class="text">I did these courses at <a href="https://iantindia.com/" title="link to website" target = "_blank" >IANT </a></p>
+</div>
 </body>
 </html>
