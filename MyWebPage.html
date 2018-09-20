@@ -1,6 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+<title>MyWebPage</title>
 <style>
 .Heading{
 	border : 0px;
@@ -48,10 +49,8 @@ a:hover{
 }	
 div#myText{
 	position: absolute; 
-	//background-color:AntiqueWhite;
 	width: 500px;
 	height : 550px;
-	border-right : 10px solid green;
 	padding: 10px;
 	margin: 10px;
 	top: 0 px; 
@@ -61,12 +60,45 @@ div#myText{
 div#myTable{
 	position: absolute; 
 	width : 400px;
-	height : 500px;
-	margin-left : 550px;
+	height : 550px;
+	margin-left : 450px;
+	margin-top:10px ;
 	padding : 10px;
-	//border : 5px solid green;
 	 
 }
+div#myImageGallery{
+	position:absolute;
+	margin-left:950px;
+	padding:10px;
+}
+div#myImage1{
+	position:absolute;
+	border:2px dashed tomato;
+	padding:5px;
+}
+div#myImage2{
+	position:absolute;
+	border:2px dashed tomato;
+	margin-left:170px;
+	padding:5px;
+}
+div#myImage3{
+	position:absolute;
+	border:2px dashed tomato;
+	margin-top:170px;
+	padding:5px;
+}
+div#myImage4{
+	position:absolute;
+	border:2px dashed tomato;
+	margin-top:170px;
+	margin-left:170px;
+	padding:5px;
+}
+img:hover{
+	border:2px solid tomato;
+}
+	
 </style>
 </head>
 
@@ -135,6 +167,20 @@ I did these courses at <a href="https://iantindia.com/" title="link to website" 
 	<td>Good</td>
 </tr>
 </table>
+</div>
+<div id="myImageGallery">
+<div id="myImage1">
+<img src = "Slideshow_1.png" alt="C++ logo" style="width:150px;height=150px" >
+</div>
+<div id="myImage2">
+<img src = "Slideshow_2.png" alt="HTML5 logo" style="width:150px;height=150px">
+</div>
+<div id="myImage3">
+<img src = "Slideshow_3.png" alt="JAVA logo" style="width:150px;height=150px">
+</div>
+<div id="myImage4">
+<img src = "Slideshow_4.png" alt="CSS3 logo" style="width:150px;height=150px">
+</div>
 </div>
 </body>
 </html>
